@@ -33,4 +33,8 @@ find_package(Catch2 CONFIG REQUIRED)
 # Подключаем подпроекты.
 add_subdirectory(args_parse)
 add_subdirectory(demo)
+
+# Разрешаем поддержку unit-тестов.
+enable_testing()
+# Подключаем проект с тестами.
 add_subdirectory(test)
