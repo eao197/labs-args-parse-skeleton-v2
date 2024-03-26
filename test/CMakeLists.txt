@@ -15,3 +15,5 @@ target_link_libraries(_unit_test_args_parse
         Catch2::Catch2WithMain
 )
 
+# Посредством этой функции мы сообщаем CTest, что у нас есть еще один тест.
+catch_discover_tests(_unit_test_args_parse)

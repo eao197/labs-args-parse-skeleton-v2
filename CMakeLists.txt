@@ -35,6 +35,9 @@ add_subdirectory(args_parse)
 add_subdirectory(demo)
 
 # Разрешаем поддержку unit-тестов.
+include(CTest)
+include(Catch)
 enable_testing()
+
 # Подключаем проект с тестами.
 add_subdirectory(test)
