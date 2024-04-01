@@ -1,0 +1,13 @@
+Конфигрирование:
+
+conan install . --build=missing
+conan install . --build=missing --profile debug
+cmake --preset conan-default
+
+Сборка в Release:
+
+cmake --build --preset conan-release
+
+Сборка в Debug:
+
+cmake --build --preset conan-debug
